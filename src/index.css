@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.node{
+    border: 3px solid white;
+    padding: 2.5rem;
+    min-width: 10px;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+.nodeStart{
+    background-image: url('./images/rat.svg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 85%;
+    background-position: center center;
+}
+
+.nodeFinish{
+    background-image: url('./images/rat-food.svg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center center;
+}
+
+.nodeWall{
+    /* background-image: url('./images/bg-dark.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center; */
+    background-color: whitesmoke;
+    /* background-image: url('./images/bg-dark.svg');
+    background-size: 80%;
+    background-position: center center; */
+}
+
+.nodePath{
+    background-color: blue;
+}
