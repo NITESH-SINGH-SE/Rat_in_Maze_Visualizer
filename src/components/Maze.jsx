@@ -79,7 +79,6 @@ function Maze(props) {
             return
         }
 
-        const [first] = algo;
         const str = algo;
 
         let row = 0;
@@ -133,7 +132,7 @@ function Maze(props) {
 
     const {grid} = state
     return (
-        <div className="flex align-middle flex-col justify-center h-full ml-6 mr-6 bg-black h-full">
+        <div className="flex align-middle flex-col justify-center h-full bg-black">
         <p className=" text-center mb-4 font-semibold">Select any cell to block it.</p>
         <div className="flex place-content-center w-full">
         {

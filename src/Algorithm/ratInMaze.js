@@ -1,6 +1,5 @@
 let possiblePaths=new Set()
 const ratInMaze = (grid, x, y, N)=> {
-    // console.log(x, y)
     let vis = matrix(N);
     possiblePaths = new Set()
     solve(grid, x, y, N, vis, "")
@@ -8,7 +7,6 @@ const ratInMaze = (grid, x, y, N)=> {
     {
         return null
     }
-    console.log(possiblePaths)
 
     let arr = [];
     for(let element of possiblePaths)
