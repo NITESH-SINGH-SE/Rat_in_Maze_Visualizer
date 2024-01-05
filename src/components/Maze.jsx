@@ -46,6 +46,7 @@ function Maze(props) {
   };
 
   const handleMouseUp = (row, col) => {
+    if(disableBtn==true) return
     const node = grid[row][col];
     const newNode = {
       ...node,
@@ -71,14 +72,14 @@ function Maze(props) {
   };
 
   const algoRat = () => {
-    setDisableBtn(true);
     const { grid } = state;
     const algo = ratInMaze(grid, 0, 0, n);
     if (algo == null) {
       alert("Path not found");
       return;
     }
-
+    
+    setDisableBtn(true);
     const str = algo;
 
     let row = 0;
